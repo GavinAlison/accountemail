@@ -79,7 +79,7 @@ public class JavaEmailTest3 {
 
         // 5. 创建图片“节点”
         MimeBodyPart image = new MimeBodyPart();
-        DataHandler dh = new DataHandler(new FileDataSource("C:\\workspace\\accountemail\\src\\main\\java\\com\\javamail\\FairyTail.jpg")); // 读取本地文件
+        DataHandler dh = new DataHandler(new FileDataSource("C:\\workspace\\accountemail\\src\\main\\resources\\FairyTail.jpg")); // 读取本地文件
         image.setDataHandler(dh);                   // 将图片数据添加到“节点”
         image.setContentID("image_fairy_tail");     // 为“节点”设置一个唯一编号（在文本“节点”将引用该ID）
 
@@ -102,7 +102,7 @@ public class JavaEmailTest3 {
 
         // 9. 创建附件“节点”
         MimeBodyPart attachment = new MimeBodyPart();
-        DataHandler dh2 = new DataHandler(new FileDataSource("C:\\workspace\\accountemail\\src\\main\\java\\com\\javamail\\妖精的尾巴目录.doc"));  // 读取本地文件
+        DataHandler dh2 = new DataHandler(new FileDataSource("C:\\workspace\\accountemail\\src\\main\\resources\\目录.doc"));  // 读取本地文件
         attachment.setDataHandler(dh2);                                             // 将附件数据添加到“节点”
         attachment.setFileName(MimeUtility.encodeText(dh2.getName()));              // 设置附件的文件名（需要编码）
 

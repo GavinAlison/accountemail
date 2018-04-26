@@ -46,6 +46,5 @@ public class JavMailTest {
         message.writeTo(out);
         out.flush();
         out.close();
-
     }
 }

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.alison.account.email.AccountEmailServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.332 sec <<< FAILURE!
-testSendMail(com.alison.account.email.AccountEmailServiceTest)  Time elapsed: 0.285 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.344 sec <<< FAILURE!
+testSendMail(com.alison.account.email.AccountEmailServiceTest)  Time elapsed: 0.282 sec  <<< ERROR!
 org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [classpath*:service.properties] cannot be opened because it does not exist
 	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:553)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.alison.account.email.AccountEmailServiceTest" time="0.285" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="com.alison.account.email.AccountEmailServiceTest" time="0.282" errors="1" skipped="0">
   <properties>
     <property name="idea.version" value="2017.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\tool\Java\jdk1.8.0_131\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.2 clean test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.2 clean compile test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.alison.account.email.AccountEmailServiceTest" name="testSendMail" time="0.285">
+  <testcase classname="com.alison.account.email.AccountEmailServiceTest" name="testSendMail" time="0.282">
     <error message="Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [classpath*:service.properties] cannot be opened because it does not exist" type="org.springframework.beans.factory.BeanInitializationException">org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [classpath*:service.properties] cannot be opened because it does not exist
 	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:553)
@@ -108,15 +108,15 @@ Caused by: java.io.FileNotFoundException: class path resource [classpath*:servic
 	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:69)
 	... 36 more
 </error>
-    <system-err>���� 26, 2018 5:57:24 ���� org.springframework.context.support.AbstractApplicationContext prepareRefresh
-��Ϣ: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c0369c4: display name [org.springframework.context.support.ClassPathXmlApplicationContext@5c0369c4]; startup date [Thu Apr 26 17:57:24 CST 2018]; root of context hierarchy
-���� 26, 2018 5:57:24 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>���� 26, 2018 8:15:42 ���� org.springframework.context.support.AbstractApplicationContext prepareRefresh
+��Ϣ: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c0369c4: display name [org.springframework.context.support.ClassPathXmlApplicationContext@5c0369c4]; startup date [Thu Apr 26 20:15:42 CST 2018]; root of context hierarchy
+���� 26, 2018 8:15:42 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 ��Ϣ: Loading XML bean definitions from class path resource [account-email.xml]
-���� 26, 2018 5:57:24 ���� org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+���� 26, 2018 8:15:42 ���� org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
 ��Ϣ: Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@5c0369c4]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6276ae34
-���� 26, 2018 5:57:24 ���� org.springframework.core.io.support.PropertiesLoaderSupport loadProperties
+���� 26, 2018 8:15:42 ���� org.springframework.core.io.support.PropertiesLoaderSupport loadProperties
 ��Ϣ: Loading properties file from class path resource [classpath*:service.properties]
-���� 26, 2018 5:57:24 ���� org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+���� 26, 2018 8:15:42 ���� org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
 ��Ϣ: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6276ae34: defining beans [propertyConfigurer,javaMailSender,accountEmailService]; root of factory hierarchy
 </system-err>
   </testcase>
